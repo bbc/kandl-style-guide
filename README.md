@@ -5,6 +5,9 @@ CSS style guide for all K&amp;L products.
 ## Table of Contents
 1. Spacing
 2. Formatting
+3. Selectors
+4. Naming
+5. Sass Features
 
 ## Spacing
 + Use soft-tabs (spaces) with a two space indent.
