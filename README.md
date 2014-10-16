@@ -27,12 +27,23 @@ CSS style guide for all K&amp;L products.
 * If you need more than 2 classes in a selector, consider specifying a new
   class to cover the edge case.
 
-## Class Naming
+## Naming
 * Use BEM (Block, Element, Modifier) naming standards for classes. See [CSS 
   Wizardry's article](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
   for more information.
-  * *Blocks* represent the top levels of components.
-  * *Elements* represent individual aspects of blocks which contribute to their
+  * _Blocks_ represent the top levels of components.
+  * _Elements_ represent individual aspects of blocks which contribute to their
     overall appearance/behaviour.
-  * *Modifiers* are different states of a block or element.
+  * _Modifiers_ are different states of a block or element.
+* Use single hyphens as word separators in classes and variables, to match the
+  property naming scheme.
+
+## Sass Features
+* Do not use `@extend` unless *absolutely* necessary. It is inefficient and
+  generates useless selectors which will never match.
+* Use `@mixin` and `@include` wherever you would use `@extend`. Better to have
+  CSS duplication (which is compressable) than selector proliferation.
+* Do not nest declaration blocks. It hides the origin of selectors when 
+  searching the codebase and can easily result in over-specified selectors
+  in the pursuit of pretty code.
 
