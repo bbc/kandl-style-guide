@@ -10,7 +10,7 @@ CSS style guide for all K&amp;L products.
 5. Sass Features
 
 ## Spacing
-+ Use soft-tabs (spaces) with a two space indent.
++ Use soft-tabs (spaces) with a four space indent.
 + Put a single space after the `:` in propery declarations.
 + Put a single space before the `{` in rule declarations.
 + Put a single line break between rulesets.
@@ -21,7 +21,7 @@ CSS style guide for all K&amp;L products.
 + Use hex color codes `#000` unless using `rgba()`.
 + Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin:
   0px;`.
-* Order properties within a declaration block alphabetically, for instance 
+* Order properties within a declaration block alphabetically, for instance
   `margin` goes before `padding`.
 
 ## Selectors
@@ -31,7 +31,7 @@ CSS style guide for all K&amp;L products.
   class to cover the edge case.
 
 ## Naming
-* Use BEM (Block, Element, Modifier) naming standards for classes. See [CSS 
+* Use BEM (Block, Element, Modifier) naming standards for classes. See [CSS
   Wizardry's article](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
   for more information.
   * _Blocks_ represent the top levels of components.
@@ -46,7 +46,7 @@ CSS style guide for all K&amp;L products.
   generates useless selectors which will never match.
 * Use `@mixin` and `@include` wherever you would use `@extend`. Better to have
   CSS duplication (which is compressable) than selector proliferation.
-* Do not nest declaration blocks. It hides the origin of selectors when 
+* Do not nest declaration blocks. It hides the origin of selectors when
   searching the codebase and can easily result in over-specified selectors
   in the pursuit of pretty code.
 
