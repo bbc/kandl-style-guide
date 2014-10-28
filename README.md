@@ -8,6 +8,7 @@ CSS style guide for all K&amp;L products.
 3. Selectors
 4. Naming
 5. Sass Features
+6. File Organisation
 
 ## Spacing
 + Use soft-tabs (spaces) with a four space indent.
@@ -50,3 +51,30 @@ CSS style guide for all K&amp;L products.
   searching the codebase and can easily result in over-specified selectors
   in the pursuit of pretty code.
 
+## File Organisation
+* Projects must organise their Sass files in the same way. The directory
+  structure should be as outlined below.
+* The `assets` folder should ideally appear in the project root.
+* Any directly deployable files (i.e. ones that need no compilation) should
+  be stored within the assets folder too. They should be copied out into
+  destination folders during build time.
+
+Desired directory structure:
+```
+/assets
+  /sass
+    Base path for top-level stylesheets, which largely include partials in the
+    directories below.
+      /objects
+        Generic objects which form building blocks of components. Generally
+        focused on layout and visual behaviours.
+      /theming
+        Application of colours, imagery and so on to objects.
+      /components
+        Home for styling directives specific to components, i.e. too specific
+        to be applied to generic objects.
+      /mixins
+        Home for mixins.
+      /functions
+        Home for utility functions.
+```
