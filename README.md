@@ -10,7 +10,7 @@ CSS style guide for all K&amp;L products.
 5. Sass Features
 6. File Organisation
 
-## Spacing
+## 1. Spacing
 + Use soft-tabs (spaces) with a four space indent.
 + Put a single space after the `:` in propery declarations.
 + Put a single space before the `{` in rule declarations.
@@ -18,20 +18,20 @@ CSS style guide for all K&amp;L products.
 + When grouping selectors, keep individual selectors to a single line.
 + Place closing braces of declaration blocks on a new line.
 
-## Formatting
+## 2. Formatting
 + Use hex color codes `#000` unless using `rgba()`.
 + Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin:
   0px;`.
 * Order properties within a declaration block alphabetically, for instance
   `margin` goes before `padding`.
 
-## Selectors
+## 3. Selectors
 * Only use class names in selectors, no IDs or HTML tag names.
 * Keep selectors to a maximum depth of 2 classes to prevent over-specification.
 * If you need more than 2 classes in a selector, consider specifying a new
   class to cover the edge case.
 
-## Naming
+## 4. Naming
 * Use BEM (Block, Element, Modifier) naming standards for classes. See [CSS
   Wizardry's article](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
   for more information.
@@ -42,7 +42,7 @@ CSS style guide for all K&amp;L products.
 * Use single hyphens as word separators in classes and variables, to match the
   property naming scheme.
 
-## Sass Features
+## 5. Sass Features
 * Do not use `@extend` unless *absolutely* necessary. It is inefficient and
   generates useless selectors which will never match.
 * Use `@mixin` and `@include` wherever you would use `@extend`. Better to have
@@ -51,7 +51,7 @@ CSS style guide for all K&amp;L products.
   searching the codebase and can easily result in over-specified selectors
   in the pursuit of pretty code.
 
-## File Organisation
+## 6. File Organisation
 * Projects must organise their Sass files in the same way. The directory
   structure should be as outlined below.
 * The `assets` folder should ideally appear in the project root.
