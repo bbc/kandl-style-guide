@@ -99,9 +99,9 @@ In the example below, the “200px” is the value.
 Tip: configure your editor to "show invisibles" or to automatically remove
 end-of-line whitespace.
 
-Tip: use an [EditorConfig](http://editorconfig.org/) file (or equivalent) to
-help maintain the basic whitespace conventions that have been agreed for your
-code-base. Also see our own [Coding Standards](https://confluence.dev.bbc.co.uk/display/unifiedplace/Coding+Standards#CodingStandards-Generalguidelinesforwritingcode)
+Tip: Read your [Coding Standards](https://confluence.dev.bbc.co.uk/display/unifiedplace/Coding+Standards#CodingStandards-Generalguidelinesforwritingcode.)
+to help maintain the basic whitespace conventions that have been agreed for your
+code-base.
 
 ## 2. Formatting
 + Use lowercase and shorthand hex color codes `#000` unless using `rgba()`.
