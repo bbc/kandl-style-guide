@@ -20,21 +20,17 @@ A rule set is a single section of CSS including the selector, the curly braces,
 and the different lines with properties and values. The code in the example
 below comprises one rule set:
 
-    /* the rule set starts with the line below */
     .example {
         font-family: Arial, sans-serif;
         color: #555;
         font-size: 14px;
     }
-    /* ends with the closing curly brace above */
 
 ### Selector
 
 A selector is the part of the CSS line that selects what element to target with
 the property/value pair. In the example below “.foo” is the selector:
 
-    /* the selector is everything on the first line */
-    /* excluding the opening curly brace */
     .foo {
         width: 200px;
     }
@@ -50,14 +46,14 @@ You can also have multiple selectors, serparted by a comma:
 ### Declaration Block
 
 A declaration block is the section of CSS where the property/value pairs
-appear. In the example below, everything found between the curly braces
-(not including the comments) is a declaration block:
+appear. In the example below, everything between the curly braces is a
+declaration block:
 
     .example {
-        font-family: Arial, sans-serif; /* starts with this line */
+        font-family: Arial, sans-serif;
         color: #555;
         font-size: 14px;
-        line-height: 20px; /* ends here, before the closing curly brace */
+        line-height: 20px;
     }
 
 ### Declaration
