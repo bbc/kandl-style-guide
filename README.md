@@ -40,6 +40,7 @@ the property/value pair. In the example below “.foo” is the selector:
     }
 
 You can also have multiple selectors, serparted by a comma:
+
     .foo,
     .bar {
         width: 200px;
