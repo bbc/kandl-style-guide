@@ -17,6 +17,7 @@ CSS style guide for all K&amp;L products.
 + Put a single line break between rulesets.
 + When grouping selectors, keep individual selectors to a single line.
 + Place closing braces of declaration blocks on a new line.
++ Include a space after each comma in comma-separated property or function values.
 
 Tip: configure your editor to "show invisibles" or to automatically remove
 end-of-line whitespace.
@@ -29,6 +30,7 @@ code-base.
 + Use lowercase and shorthand hex color codes `#000` unless using `rgba()`.
 + Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin:
   0px;`.
++ Use single or double quotes consistently. Preference is for single quotes, e.g., content: ''.
 + Order properties within a declaration block alphabetically, for instance
   `margin` goes before `padding`.
 
