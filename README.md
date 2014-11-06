@@ -101,7 +101,7 @@ end-of-line whitespace.
 
 Tip: use an [EditorConfig](http://editorconfig.org/) file (or equivalent) to
 help maintain the basic whitespace conventions that have been agreed for your
-code-base.
+code-base. Also see our own [Coding Standards](https://confluence.dev.bbc.co.uk/display/unifiedplace/Coding+Standards#CodingStandards-Generalguidelinesforwritingcode)
 
 ## 2. Formatting
 + Use lowercase and shorthand hex color codes `#000` unless using `rgba()`.
