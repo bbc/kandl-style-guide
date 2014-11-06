@@ -18,8 +18,15 @@ CSS style guide for all K&amp;L products.
 + When grouping selectors, keep individual selectors to a single line.
 + Place closing braces of declaration blocks on a new line.
 
+Tip: configure your editor to "show invisibles" or to automatically remove
+end-of-line whitespace.
+
+Tip: use an [EditorConfig](http://editorconfig.org/) file (or equivalent) to
+help maintain the basic whitespace conventions that have been agreed for your
+code-base.
+
 ## 2. Formatting
-+ Use hex color codes `#000` unless using `rgba()`.
++ Use lowercase and shorthand hex color codes `#000` unless using `rgba()`.
 + Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin:
   0px;`.
 + Order properties within a declaration block alphabetically, for instance
