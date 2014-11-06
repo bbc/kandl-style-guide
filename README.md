@@ -12,7 +12,7 @@ CSS style guide for all K&amp;L products.
 
 
 ## Foreword
-When discussing our css we need to use consistent terminology.
+When discussing our CSS we need to use consistent terminology.
 
 ### Rule Set
 
