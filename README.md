@@ -14,7 +14,7 @@ CSS style guide for all K&amp;L products.
 + Use soft-tabs (spaces) with a four space indent.
 + Put a single space after the `:` in propery declarations.
 + Put a single space before the `{` in rule declarations.
-+ Put a single line break between rulesets.
++ Put a single blank line break between rulesets.
 + When grouping selectors, keep individual selectors to a single line.
 + Place closing braces of declaration blocks on a new line.
 
@@ -24,6 +24,17 @@ CSS style guide for all K&amp;L products.
   0px;`.
 + Order properties within a declaration block alphabetically, for instance
   `margin` goes before `padding`.
++ Vendor-prefixes should also be declared alphabetically, with the prefix coming
+  directly before the unprefixed declaration. For example:
+```css
+.my-cool-class {
+    background-color: #808;
+    --moz-border-radius: 4px;
+    --webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+```
++ All declarations must end with a single semicolon.
 
 ## 3. Selectors
 + Only use class names in selectors, no IDs or HTML tag names.
