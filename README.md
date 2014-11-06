@@ -14,7 +14,7 @@ CSS style guide for all K&amp;L products.
 + Use soft-tabs (spaces) with a four space indent.
 + Put a single space after the `:` in propery declarations.
 + Put a single space before the `{` in rule declarations.
-+ Put a single blank line break between rulesets.
++ Put a single blank line between rulesets.
 + When grouping selectors, keep individual selectors to a single line.
 + Place closing braces of declaration blocks on a new line.
 
