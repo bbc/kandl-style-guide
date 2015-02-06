@@ -34,27 +34,29 @@ var guybrush = new Pirate(),
 // bad
 var grog,
     guybrush = new Pirate(),
-    leChuck = new Priate();
+    leChuck = new Pirate();
 
 // good
 var guybrush = new Pirate(),
-    leChuck = new Priate(),
+    leChuck = new Pirate(),
     grog;
 ```
 
-- Assign variables at the top of their scope. This helps avoid issues with variable declaration and assignment hoisting related issues.
+- Assign variables at the top of their scope. This helps avoid issues with variable declaration and hoisting related issues.
 ```javascript
 // bad
 var sayHello = function () {
    openMouth();
 
-   var sentence = 'I`\m Guybrush Threepwood, mighty pirate.';
+   var sentence = 'I\'m Guybrush Threepwood, mighty pirate.';
 };
 
 // good
 var sayHello = function () {
-   var sentence = 'I`\m Guybrush Threepwood, mighty pirate.';
+   var sentence = 'I\'m Guybrush Threepwood, mighty pirate.';
 
    openMouth();
 };
 ```
+
+**[⬆ back to top](#table-of-contents)**
