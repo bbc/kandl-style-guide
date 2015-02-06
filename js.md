@@ -9,11 +9,11 @@ JavaScript style guide for all K&amp;L products.
 ## Variables
     - Should always be declared to prevent polluting the global namespace.
     ```javascript
-   // bad
-   guybrush = new Pirate();
+    // bad
+    guybrush = new Pirate();
 
-   // good
-   var guybrush = new Pirate();
+    // good
+    var guybrush = new Pirate();
     ```
 
     - Should use one `var` keyword and commas when declaring multiple variables. This makes them easier to read.
