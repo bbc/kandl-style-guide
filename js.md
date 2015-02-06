@@ -5,6 +5,7 @@ JavaScript style guide for all K&amp;L products.
 ## Table of Contents
 
 1. [Variables](#variables)
+2. [Naming Conventions](#naming-conventions)
 
 ## Variables
 - Should always be declared to prevent polluting the global namespace.
@@ -60,3 +61,56 @@ var sayHello = function () {
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## Naming Conventions
+- Be descriptive when naming things.
+```javascript
+// bad
+var obj = {},
+    b = false,
+    thing;
+
+// good
+var pirateConfigObject = {},
+    grogIngredients = ['Kerosene', 'Glycol acid', 'Red dye #2', 'Rum'];
+```
+
+- Use camelCase when naming objects, functions, and instances.
+```javascript
+// bad
+var three_headed_monkey = new Monkey(),
+    GetButtonText = function () {
+        return 'Ask me about Loom';
+    },
+    RUBBER_TREE;
+
+// good
+var threeHeadedMonkey = new Monkey(),
+    getButtonText = function () {
+        return 'Ask me about Loom';
+    },
+    rubberTree;
+```
+
+- Use PascalCase when naming constructors or classes.
+```javascript
+// bad
+var pirate = function (options) {
+    this.name = options.name;
+};
+
+var largo = new pirate({
+    name: 'Largo LeGrande'
+});
+
+// good
+var Pirate = function (options) {
+    this.name = options.name;
+}; 
+
+var largo = new Pirate({
+    name: 'Largo LeGrande' 
+});
+```
+
+**[⬆ back to top](#naming-conventions)**
