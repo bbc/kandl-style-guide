@@ -61,7 +61,6 @@ var sayHello = function () {
    openMouth();
 };
 ```
-
 **[⬆ back to top](#table-of-contents)**
 
 ## Naming Conventions
@@ -114,14 +113,36 @@ var largo = new Pirate({
     name: 'Largo LeGrande' 
 });
 ```
+**[⬆ back to top](#table-of-contents)**
 
+## Semicolons
+- Yes please.
+```javascript
+// bad
+(function () {
+    var name = 'Thriftweed'
+    return name
+})()
+
+// good
+(function () {
+    var name = 'Thriftweed';
+    return name;
+})();
+
+// good (guards against the function becoming an argument when two files with IIFEs are concatenated)
+;(function () {
+    var name = 'Thriftweed';
+    return name;
+})();
+```
 **[⬆ back to top](#table-of-contents)**
 
 ## Functions
 **[⬆ back to top](#table-of-contents)**
 
 ## Comments
-Use // for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment.
+Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment.
 ```javascript
 // bad
 var fettuciniBrothers = ['Bill', 'Alfredo']; // Names of the Fettucini Brothers.
@@ -164,5 +185,4 @@ var sayHello = function (name) {
  * @param {String} Sentence to be spoken.
  */
 ```
-
 **[⬆ back to top](#table-of-contents)**
