@@ -6,6 +6,8 @@ JavaScript style guide for all K&amp;L products.
 
 1. [Variables](#variables)
 2. [Naming Conventions](#naming-conventions)
+3. [Functions](#functions);
+4. [Comments](#comments);
 
 ## Variables
 - Should always be declared to prevent polluting the global namespace.
@@ -113,4 +115,54 @@ var largo = new Pirate({
 });
 ```
 
-**[⬆ back to top](#naming-conventions)**
+**[⬆ back to top](#table-of-contents)**
+
+## Functions
+**[⬆ back to top](#table-of-contents)**
+
+## Comments
+Use // for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment.
+```javascript
+// bad
+var fettuciniBrothers = ['Bill', 'Alfredo']; // Names of the Fettucini Brothers.
+
+// good
+// Names of the Fettucini Brothers.
+var fettuciniBrothers = ['Bill', 'Alfredo']; 
+
+// bad
+var getNamesOfFettuciniBrothers = function () {
+    var fettuciniBrothers = ['Bill', 'Alfredo']; 
+    // Return names of the Fettucini Brothers.
+    return fettuciniBrothers;
+};
+
+// good
+var getNamesOfFettuciniBrothers = function () {
+    var fettuciniBrothers = ['Bill', 'Alfredo']; 
+
+    // Return names of the Fettucini Brothers.
+    return fettuciniBrothers;
+};
+```
+
+- Use `/** ... */` for multiline comments. Include a description, specify types and values for all parameters and return values.
+```javascript
+// bad
+// Takes a user's name, says hello and
+// tries to sell them a leather jacket.
+var sayHello = function (name) {
+    return 'Hi ' + name + ', I\'m selling these fine leather jackets.';
+};
+
+// good
+/**
+ * Takes a user's name, says hello and
+ * tries to sell them a leather jacket.
+ *
+ * @param {String} name Name of person being spoken to.
+ * @param {String} Sentence to be spoken.
+ */
+```
+
+**[⬆ back to top](#table-of-contents)**
