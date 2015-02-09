@@ -5,9 +5,11 @@ JavaScript style guide for all K&amp;L products.
 ## Table of Contents
 
 1. [Variables](#variables)
-2. [Naming Conventions](#naming-conventions)
-3. [Functions](#functions);
-4. [Comments](#comments);
+2. [Whitespace](#whitespace)
+3. [Naming Conventions](#naming-conventions)
+4. [Semicolons](#semicolons)
+5. [Functions](#functions)
+6. [Comments](#comments)
 
 ## Variables
 - Should always be declared to prevent polluting the global namespace.
@@ -60,6 +62,94 @@ var sayHello = function () {
 
    openMouth();
 };
+```
+**[⬆ back to top](#table-of-contents)**
+
+## Whitespace
+- Use soft tabs set to 4 spaces.
+```javascript
+// bad
+var getPlantName() {
+∙∙return 'Chuck the Plant';
+}
+
+// good
+var getPlantName() {
+∙∙∙∙return 'Chuck the Plant';
+}
+```
+
+- Place 1 space after the `function` keyword and 1 space before the leading brace.
+```javascript
+// bad
+var setButtonText = function(){
+    var buttonText = 'Ask me about Grim Fandango.';
+};
+
+// good
+var setButtonText = function () {
+    var buttonText = 'Ask me about Grim Fandango.';
+};
+
+// bad
+person.set('attr',{
+    name: 'Guybrush',
+    talent: 'Can hold breath for 10 minutes'
+});
+
+// good
+person.set('attr', {
+    name: 'Guybrush',
+    talent: 'Can hold breath for 10 minutes'
+});
+```
+
+- Set off operators with spaces.
+```javascript
+// bad
+var x=y+5;
+
+// good
+var x = y + 5;
+```
+
+- Use indentation when making long method chains. Use a leading dot, which
+  emphasizes that the line is a method call, not a new statement.
+```javascript
+// bad
+$('#items').find('.selected').highlight().end().find('.open').updateCount();
+
+// bad
+$('#items').
+  find('selected').
+    highlight().
+    end().
+  find('.open').
+    updateCount();
+
+// good
+$('#items')
+  .find('.selected')
+    .highlight()
+    .end()
+  .find('.open')
+    .updateCount();
+
+// bad
+var leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led', true)
+    .attr('width',  (radius + margin) * 2).append('svg:g')
+    .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+    .call(tron.led);
+
+// good
+var leds = stage.selectAll('.led')
+    .data(data)
+  .enter().append('svg:svg')
+    .class('led', true)
+    .attr('width',  (radius + margin) * 2)
+  .append('svg:g')
+    .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+    .call(tron.led);
 ```
 **[⬆ back to top](#table-of-contents)**
 
