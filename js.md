@@ -266,6 +266,83 @@ var errorMessage = 'If a woodchuck could chuck and would chuck some amount ' +
 **[⬆ back to top](#table-of-contents)**
 
 ## Functions
+  - Always use function expressions rather than function declarations. This enforces better order in your code.
+```javascript
+// good
+var anonymous = function () {
+    return true;
+};
+
+// good
+var named = function named () {
+    return true;
+};
+
+// good
+(function () {
+    console.log('It belongs in a museum!');
+})();
+
+// bad
+function whereDoesItBelong() {
+    console.log('In a museum!');
+}
+```
+
+- Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.
+- **Note:** ECMA-262 defines a `block` as a list of statements. A function declaration is not a statement. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
+```javascript
+// bad
+if (currentUser === 'Roger') {
+    function sayHelloRoger() {
+        console.log('Hello Roger.');
+    }
+}
+
+// good
+var sayHelloRoger;
+
+if (currentUser === 'Roger') {
+    sayHelloRoger = function sayHelloRoger () {
+        console.log('Hello Roger.');
+    };
+}
+```
+**[⬆ back to top](#table-of-contents)**
+
+## Properties
+  - Use dot notation when accessing properties.
+
+    ```javascript
+    var reginaldBlackbeard = {
+        pirate: true,
+        age: 39,
+        favouritePlace: 'Library'
+    };
+
+    // bad
+    var isPirate = reginaldBlackbeard['pirate'];
+
+    // good
+    var isPirate = reginaldBlackbeard.pirate;
+    ```
+
+  - Use subscript notation `[]` when accessing properties with a variable.
+
+    ```javascript
+    var reginaldBlackbeard = {
+        pirate: true,
+        age: 39,
+        favouritePlace: 'Library'
+    };
+
+    var getProp = function (prop) {
+      return reginaldblackbeard[prop];
+    }
+
+    var isPirate = getProp('pirate');
+    ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Comments
