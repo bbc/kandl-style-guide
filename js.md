@@ -9,8 +9,12 @@ JavaScript style guide for all K&amp;L products.
 1. [Naming Conventions](#naming-conventions)
 1. [Strings](#strings)
 1. [Semicolons](#semicolons)
+1. [Conditional Expressions & Equality](#conditional-expressions--equality)
+1. [Blocks](#blocks)
 1. [Functions](#functions)
+1. [Properties](#properties)
 1. [Comments](#comments)
+1. [License](#license)
 
 ## Variables
 - Should always be declared to prevent polluting the global namespace.
@@ -470,7 +474,7 @@ var sayHello = function (name) {
 
 ## License
 
-This Style Guide is based on Airbnb's excellent JavaScript Style Guide released under the MIT License. The license has been preserved below. Any modifications made to this document are also released under the MIT License.
+This Style Guide is based on Airbnb's excellent [JavaScript Style Guide](https://github.com/airbnb/javascript) released under the MIT License. The license has been preserved below. Any modifications made to this document are also released under the MIT License.
 
 (The MIT License)
 
