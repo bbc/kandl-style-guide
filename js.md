@@ -5,11 +5,12 @@ JavaScript style guide for all K&amp;L products.
 ## Table of Contents
 
 1. [Variables](#variables)
-2. [Whitespace](#whitespace)
-3. [Naming Conventions](#naming-conventions)
-4. [Semicolons](#semicolons)
-5. [Functions](#functions)
-6. [Comments](#comments)
+1. [Whitespace](#whitespace)
+1. [Naming Conventions](#naming-conventions)
+1. [Strings](#strings)
+1. [Semicolons](#semicolons)
+1. [Functions](#functions)
+1. [Comments](#comments)
 
 ## Variables
 - Should always be declared to prevent polluting the global namespace.
@@ -203,6 +204,42 @@ var largo = new Pirate({
     name: 'Largo LeGrande' 
 });
 ```
+**[⬆ back to top](#table-of-contents)**
+
+## Strings
+- Use single quotes `''` for strings.
+```javascript
+// bad
+var name = "Murray";
+
+// good
+var name = 'Murray';
+
+// bad
+var fullName = "Murray " + this.lastName;
+
+// good
+var fullName = 'Murray ' + this.lastName;
+```
+
+- Strings longer than 80 characters should be written across multiple lines using string concatenation.
+```javascript
+// bad
+var errorMessage = 'If a woodchuck could chuck and would chuck some amount of wood, what amount of wood would a woodchuck chuck?';
+
+// bad
+var errorMessage = 'If a woodchuck could chuck and would chuck some amount ' +
+'of wood, what amount of wood would a woodchuck chuck? Even if a woodchuck ' +
+'could chuck wood and even if a woodchuck would chuck wood, should a ' +
+'woodchuck chuck wood?';
+
+// good
+var errorMessage = 'If a woodchuck could chuck and would chuck some amount ' +
+    'of wood, what amount of wood would a woodchuck chuck? Even if a woodchuck ' +
+    'could chuck wood and even if a woodchuck would chuck wood, should a ' +
+    'woodchuck chuck wood?';
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Semicolons
