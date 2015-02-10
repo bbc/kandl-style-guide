@@ -265,6 +265,82 @@ var errorMessage = 'If a woodchuck could chuck and would chuck some amount ' +
 ```
 **[⬆ back to top](#table-of-contents)**
 
+## Conditional Expressions & Equality
+
+- Use `===` and `!==` over `==` and `!=`.
+- Conditional expressions are evaluated using coercion with the `ToBoolean` method and always follow these simple rules:
+
++ **Objects** evaluate to **true**
++ **Undefined** evaluates to **false**
++ **Null** evaluates to **false**
++ **Booleans** evaluate to **the value of the boolean**
++ **Numbers** evaluate to **false** if **+0, -0, or NaN**, otherwise **true**
++ **Strings** evaluate to **false** if an empty string `''`, otherwise **true**
+
+```javascript
+if ([0]) {
+    // true
+    // An array is an object, objects evaluate to true
+}
+```
+
+- Use shortcuts.
+
+```javascript
+// bad
+if (name !== '') {
+    console.log('Hi ' + name);
+}
+
+// good
+if (name) {
+    console.log('Hi ' + name);
+}
+
+// bad
+if (collection.length > 0) {
+    console.log('The collection has content.');
+}
+
+// good
+if (collection.length) {
+    console.log('The collection has content.');
+}
+```
+
+- For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll.
+
+**[⬆ back to top](#table-of-contents)**
+
+
+## Blocks
+
+- Use braces with all multi-line blocks.
+
+```javascript
+// bad
+if (test)
+    return false;
+
+// good
+if (test) return false;
+
+// good
+if (test) {
+    return false;
+}
+
+// bad
+var getName = function () { return 'Bobbin Threadbare'; };
+
+// good
+var getName = function () {
+    return 'Bobbin Threadbare';
+};
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Functions
   - Always use function expressions rather than function declarations. This enforces better order in your code.
 ```javascript
