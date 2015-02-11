@@ -39,7 +39,7 @@ var guybrush = new Pirate(),
     grog = true;
 ```
 
-- Declare unassigned variables last. This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
+- Declare unassigned variables last.
 ```javascript
 // bad
 var grog,
