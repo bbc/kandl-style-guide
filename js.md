@@ -348,6 +348,11 @@ var getName = function () {
 ## Functions
   - Always use function expressions rather than function declarations. This enforces better order in your code.
 ```javascript
+// bad
+function whereDoesItBelong() {
+    console.log('In a museum!');
+}
+
 // good
 var anonymous = function () {
     return true;
@@ -362,11 +367,6 @@ var named = function named () {
 (function () {
     console.log('It belongs in a museum!');
 })();
-
-// bad
-function whereDoesItBelong() {
-    console.log('In a museum!');
-}
 ```
 
 - Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.
