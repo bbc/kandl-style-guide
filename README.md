@@ -9,6 +9,6 @@ The K&L Style Guide provides a way for us to standardise code across all K&L pro
 
 The guide is split into three sections.
 
-* [HTML Guide (Coming soon...)](blob/master/html.md)
-* [CSS Guide](blob/master/css.md)
-* [JavaScript Guide](blob/master/js.md)
+* [HTML Guide (Coming soon...)](html.md)
+* [CSS Guide](css.md)
+* [JavaScript Guide](js.md)
