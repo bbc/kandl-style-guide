@@ -1,0 +1,22 @@
+{
+    // Rules
+    "camelcase"     : true,     // Force all variable names to use camelCase
+    "eqeqeq"        : true,     // Prohibit use of == and != in favor of === and !==.
+    "indent"        : 4,        // Enforce tab width of 4 spaces.
+    "latedef"       : true,     // Prohibit use of a variable before it is defined.
+    "maxlen"        : 80,       // Enforce line length to 80 characters
+    "newcap"        : true,     // Require capitalized names for constructor functions.
+    "quotmark"      : "single", // Enforce use of single quotation marks for strings.
+    "strict"        : true,     // Enforce placing 'use strict' at the top function scope
+    "trailing"      : true,     // Prohibit trailing whitespace.
+    "undef"         : true,     // Prohibit use of explicitly undeclared variables.
+    "unused"        : true,     // Warn when variables are defined but never used.
+
+    // Globals
+    "browser"       : true,     // Define globals exposed by modern browsers.
+    "jquery"        : true,     // Define globals exposed by jQuery.
+    "node"          : true,     // Define globals exposed by Node.js.
+
+    // Other
+    "predef"        : ["define"]
+}
