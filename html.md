@@ -165,10 +165,20 @@ x &gt; y
     </form>
 
   ```
-* Use heading tags to structure content, not for visual formatting.
 
 * Don't miss out heading levels.  Use classes if you want to change the visual appearance of some
   headings.
+  ```html
+  <!-- Bad -->
+  <h1>News</h1>
+  <h3>Kitten stuck up tree</h3>
+
+  <!-- Good -->
+  <h1>News</h1>
+  <h2 class="headline">Kitten stuck up tree</h2>
+  ```
+
+
 * Mark up row and column headers in data tables with &lt;th&gt;
 * Clickable elements that refresh the page should be coded as links. Elements that update content
   within a page should be coded as buttons.
