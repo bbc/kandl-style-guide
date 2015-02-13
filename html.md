@@ -3,7 +3,7 @@
 
 * Include the HTML5 doctype at the start of every HTML page.
   ```html
-  <!DOCTYPE html>
+  <!doctype html>
   ```
 
 * Set the language attribute on the html element to the language of the content.
