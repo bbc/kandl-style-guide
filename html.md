@@ -14,7 +14,7 @@
 * Set the encoding - it should be UTF-8 and you should ensure that your editor is configured
   to use UTF-8.
   ```html
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
   ```
 
 
@@ -173,28 +173,28 @@ x &gt; y
 
 * Make sure that content appears in the document in the order it would be read on screen.
   This ensures screen readers will read content out in a logical order.
-  ```html
-    <!-- Bad -->
+```html
+<!-- Bad -->
 
-    <aside class="sidebar">
-        <h2>You might also like these...</h2>
-        <!-- ... -->
-    </aside>
-    <section class="main">
-        <!-- ... -->
-    </section>
+<aside class="sidebar">
+    <h2>You might also like these...</h2>
+    <!-- ... -->
+</aside>
+<section class="main">
+    <!-- ... -->
+</section>
 
 
-    <!-- Good -->
-    <section class="main">
-        <!-- ... -->
-    </section>
-    <aside class="sidebar">
-        <h2>You might also like these...</h2>
-        <!-- ... -->
-    </aside>
+<!-- Good -->
+<section class="main">
+    <!-- ... -->
+</section>
+<aside class="sidebar">
+    <h2>You might also like these...</h2>
+    <!-- ... -->
+</aside>
 
-  ```
+```
 
 * Add labels for all input elements.
 
@@ -260,16 +260,8 @@ x &gt; y
 </table>
 ```
 
-* Clickable elements that refresh the page should be coded as links. Elements that update content
-  within a page should be coded as buttons.
-
+*  Clickable elements that change the page dynamically should be coded as buttons.
 ```html
-<!-- Bad -->
-<button>Visit Homepage</button>
-
-<!-- Good -->
-<a href="/">Visit Homepage</a>
-
 <!-- Bad -->
 
 <a class="button">Reveal answer</a>
@@ -277,5 +269,16 @@ x &gt; y
 <!-- Good -->
 
 <button>Reveal answer</button>
+
+```
+* Elements that refresh the page or link to content within the page should be coded as links.
+
+```html
+
+<!-- Bad -->
+<button>Visit Homepage</button>
+
+<!-- Good -->
+<a href="/">Visit Homepage</a>
 
 ```
