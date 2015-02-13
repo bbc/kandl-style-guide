@@ -22,11 +22,33 @@
 
 * Use HTML5 but provide fallbacks for new elements.
 * Use semantic markup.
+```html
+   <!-- Bad -->
+   <p class="headline">Kitten stuck up tree</p>
+
+   <!-- Good -->
+   <h2>Kitten stuck up tree</h2>
+```
 * Reduce markup wherever possible. Avoid superfluous parent elements.
-* Avoid putting html directly into strings within javascript.  Consider using a templating system
-  to cleanly separate html from javascript code.
+```html
+<!-- Bad -->
+<span class="icon">
+    <img src="tick.png" />
+</span>
+
+<!-- Good -->
+<img src="tick.png" class="icon" />
+```
+
 * Don't use inline styles.
 
+```html
+<!-- Bad -->
+<p class="summary" style="font-family: arial">
+
+<!-- Good (all styling should be in stylesheet) -->
+<p class="summary">
+```
 
 ##Syntax
 
