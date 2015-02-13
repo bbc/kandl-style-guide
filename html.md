@@ -235,7 +235,7 @@ x &gt; y
         </tr>
     </tbody>
 </table>
-
+```
 
 * Clickable elements that refresh the page should be coded as links. Elements that update content
   within a page should be coded as buttons.
