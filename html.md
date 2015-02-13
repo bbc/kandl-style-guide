@@ -118,6 +118,29 @@ x &gt; y
 
 * Use soft tabs, set to 4 spaces
 * Indent nested elements once (four spaces).
+```html
+<!-- Bad -->
+<body>
+<h1>My favourite pets</h1>
+<ul>
+<li>Dog</li>
+<li>Cat</li>
+<li>Rabbit</li>
+</ul>
+</body>
+
+<!-- Good -->
+<body>
+    <h1>My favourite pets</h1>
+    <ul>
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Rabbit</li>
+    </ul>
+</body>
+
+```
+
 * Try to avoid lines longer than 80 characters.  You may make an exception when splitting the line
   would make it less readable.
 
