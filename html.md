@@ -179,6 +179,41 @@ x &gt; y
   ```
 
 
-* Mark up row and column headers in data tables with &lt;th&gt;
+* Mark up row and column headers in data tables with &lt;thead&gt; and &lt;th&gt;
+```html
+
+<!-- Bad -->
+<table>
+    <tr>
+        <td>Badgers</td>
+        <td>Foxes</td>
+        <td>Wolves</td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>94</td>
+        <td>385</td>
+    </tr>
+</table>
+
+<!-- Good -->
+<table>
+    <thead>
+        <tr>
+            <th>Badgers</th>
+            <th>Foxes</th>
+            <th>Wolves</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>35</td>
+            <td>94</td>
+            <td>385</td>
+        </tr>
+    </tbody>
+</table>
+
+
 * Clickable elements that refresh the page should be coded as links. Elements that update content
   within a page should be coded as buttons.
