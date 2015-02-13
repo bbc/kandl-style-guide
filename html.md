@@ -20,7 +20,7 @@
 
 ##General guidelines
 
-* Use HTML5 but provide fallbacks for new elements.
+* Use HTML5, with fallbacks where necessary to provide required functionality in supported browsers.
 * Use semantic markup.
 ```html
    <!-- Bad -->
