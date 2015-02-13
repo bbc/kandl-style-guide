@@ -49,6 +49,8 @@
 <!-- Good (all styling should be in stylesheet) -->
 <p class="summary">
 ```
+* [Validate](http://validator.w3.org/) your HTML.
+* Declare stylesheets in the header and javascript at the foot of the document.
 
 ##Syntax
 
