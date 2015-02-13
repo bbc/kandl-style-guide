@@ -169,6 +169,6 @@ x &gt; y
 
 * Don't miss out heading levels.  Use classes if you want to change the visual appearance of some
   headings.
-* Mark up row and column headers in data tables with <th>
+* Mark up row and column headers in data tables with &lt;th&gt;
 * Clickable elements that refresh the page should be coded as links. Elements that update content
   within a page should be coded as buttons.
