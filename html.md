@@ -262,3 +262,20 @@ x &gt; y
 
 * Clickable elements that refresh the page should be coded as links. Elements that update content
   within a page should be coded as buttons.
+
+```html
+<!-- Bad -->
+<button>Visit Homepage</button>
+
+<!-- Good -->
+<a href="/">Visit Homepage</a>
+
+<!-- Bad -->
+
+<a class="button">Reveal answer</a>
+
+<!-- Good -->
+
+<button>Reveal answer</button>
+
+```
