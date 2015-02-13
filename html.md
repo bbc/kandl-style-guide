@@ -112,7 +112,7 @@ The currency symbol for sterling is "£".
 
 <!-- This is fine -->
 x &gt; y
-
+```
 
 ##Formatting
 
