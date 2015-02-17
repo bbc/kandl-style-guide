@@ -12,3 +12,7 @@ The guide is split into three sections.
 * [HTML Guide](html.md)
 * [CSS Guide](css.md)
 * [JavaScript Guide](js.md)
+
+## License
+
+This Style Guide is licensed under the MIT License and is copyrighted by the BBC except where stated. Please see [LICENSE.md](LICENSE.md) for the full license.
