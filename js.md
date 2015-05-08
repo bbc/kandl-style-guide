@@ -349,7 +349,7 @@ var getName = function () {
   - Always use function expressions rather than function declarations. This enforces better order in your code.
 ```javascript
 // bad
-function whereDoesItBelong() {
+function whereDoesItBelong () {
     console.log('In a museum!');
 }
 
