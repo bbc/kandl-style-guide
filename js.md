@@ -118,7 +118,7 @@ var x=y+5;
 var x = y + 5;
 ```
 
-- Use indentation when making long method chains. Use a leading dot, which
+- Use indentation when making method chains. Use a leading dot, which
   emphasizes that the line is a method call, not a new statement.
 ```javascript
 // bad
