@@ -1,3 +1,5 @@
 linters:
+    SelectorFormat:
+        convention: BEM
     Indentation:
         width: 4
