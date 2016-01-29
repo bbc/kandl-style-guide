@@ -226,7 +226,7 @@ var fullName = "Murray " + this.lastName;
 var fullName = 'Murray ' + this.lastName;
 ```
 
-- Strings longer than 80 characters should be written across multiple lines using string concatenation.
+- Strings longer than 100 characters should be written across multiple lines using string concatenation.
 ```javascript
 // bad
 var errorMessage = 'If a woodchuck could chuck and would chuck some amount of wood, what amount of wood would a woodchuck chuck?';
