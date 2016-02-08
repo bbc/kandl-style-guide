@@ -84,6 +84,18 @@ var getPlantName() {
 }
 ```
 
+- Add an empty line after variable declarations
+```javascript
+// bad
+var guybrush = new Pirate();
+guybrush.sayHello();
+
+// good
+var guybrush = new Pirate();
+
+guybrush.sayHello()
+```
+
 - Place 1 space after the `function` keyword and 1 space before the leading brace.
 ```javascript
 // bad
@@ -202,10 +214,10 @@ var largo = new pirate({
 // good
 var Pirate = function (options) {
     this.name = options.name;
-}; 
+};
 
 var largo = new Pirate({
-    name: 'Largo LeGrande' 
+    name: 'Largo LeGrande'
 });
 ```
 **[⬆ back to top](#table-of-contents)**
@@ -433,18 +445,18 @@ var fettuciniBrothers = ['Bill', 'Alfredo']; // Names of the Fettucini Brothers.
 
 // good
 // Names of the Fettucini Brothers.
-var fettuciniBrothers = ['Bill', 'Alfredo']; 
+var fettuciniBrothers = ['Bill', 'Alfredo'];
 
 // bad
 var getNamesOfFettuciniBrothers = function () {
-    var fettuciniBrothers = ['Bill', 'Alfredo']; 
+    var fettuciniBrothers = ['Bill', 'Alfredo'];
     // Return names of the Fettucini Brothers.
     return fettuciniBrothers;
 };
 
 // good
 var getNamesOfFettuciniBrothers = function () {
-    var fettuciniBrothers = ['Bill', 'Alfredo']; 
+    var fettuciniBrothers = ['Bill', 'Alfredo'];
 
     // Return names of the Fettucini Brothers.
     return fettuciniBrothers;
