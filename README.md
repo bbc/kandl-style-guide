@@ -15,7 +15,7 @@ The guide is split into three sections.
 
 ## ESLint
 
-Note that we have an ESLint config which should be used in any project using ESLint: see https://github.com/bbc/eslint-config-kandl for usage.
+Note that we have an ESLint config which should be used in any project using ESLint: see https://github.com/bbc/kandl-eslint-config for usage.
 
 ## License
 
