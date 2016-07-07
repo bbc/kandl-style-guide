@@ -13,6 +13,10 @@ The guide is split into three sections.
 * [CSS Guide](css.md)
 * [JavaScript Guide](js.md)
 
+## ESLint
+
+Note that we have an ESLint config which should be used in any project using ESLint: see https://github.com/bbc/kandl-eslint-config for usage.
+
 ## License
 
 This Style Guide is licensed under the MIT License and is copyrighted by the BBC except where stated. Please see [LICENSE.md](LICENSE.md) for the full license.
