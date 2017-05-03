@@ -1,4 +1,4 @@
-# K&L CSS Style Guide
+# Education CSS Style Guide
 
 CSS style guide for all K&amp;L products.
 

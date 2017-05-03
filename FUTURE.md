@@ -1,4 +1,4 @@
-# K&L CSS Style Guide
+# Education CSS Style Guide
 # Future Plans
 
 The style guide will continue to evolve over time, this document serves
@@ -16,7 +16,7 @@ our existing codebase, such as JavaScript and PHP.
 
 ## OOCSS
 Object Oriented CSS is the "next big thing" in the CSS world. A few people are
-advocating for it, and experiments have been performed on some K&L code to
+advocating for it, and experiments have been performed on some Education code to
 judge the benefits and feasibility of doing it.
 
 In the future, we may well want to adopt this approach to building our Sass.
@@ -37,4 +37,3 @@ classes which are used purely for feature detection or interaction.
 
 We should come up with a naming scheme which solves this issue, and can be
 followed across our entire codebase.
-

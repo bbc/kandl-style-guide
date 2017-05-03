@@ -1,6 +1,6 @@
-# K&L JavaScript Style Guide
+# Education ES5 JavaScript Style Guide
 
-JavaScript style guide for all K&amp;L products.
+JavaScript ES5 style guide for all Education products - where possible, avoid writing ES5 code and write [ES6](js.md) instead.
 
 ## Table of Contents
 
@@ -486,7 +486,7 @@ var sayHello = function (name) {
 
 ## License
 
-This Style Guide is based on Airbnb's excellent [JavaScript Style Guide](https://github.com/airbnb/javascript) released under the MIT License. The license has been preserved below. Any modifications made to this document are also released under the MIT License.
+This Style Guide is based on Airbnb's excellent [JavaScript ES5 Style Guide](https://github.com/airbnb/javascript/tree/es5-deprecated/es5) released under the MIT License. The license has been preserved below. Any modifications made to this document are also released under the MIT License.
 
 (The MIT License)
 
